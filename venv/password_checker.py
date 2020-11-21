@@ -37,7 +37,7 @@ def check_pass(password):
 
 
 if __name__ == '__main__':
-    if len(sys.argv) < 2:
+    if len(sys.argv) > 1:
         sys.exit(main(sys.argv[1:]))
     else:
         print("Usage: python password_checker.py <password>")
